@@ -139,8 +139,26 @@ TextEntailment论文分享
 	求平均得到最终分类概率，<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_pr.png" height="25%" width="25%" ></div>
 	
 ### Experiments Result
-
 <div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_experiments.png" height="40%" width="40%" ></div>
+
+
+## MT-DNN
+### Model Overview
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/MTDNN_overview.png" height="55%" width="55%" ></div>
+
+### Modules
+#### Shared Layers
+* Lexicon Encoder
+* Transformer Encoder
+#### Task Specific Layers
+* Single-Sentence Classification
+* Text Similarity
+* Pairwise Text Classification
+* Relevance Ranking
+	
+### Experiments Result
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/MTDNN_experiments.png" height="40%" width="40%" ></div>
+
 
 ## Conclusion
 ### DA
@@ -155,4 +173,8 @@ TextEntailment论文分享
 * 加入点积和差值的方式，利于发现p和h的关系
 ### SAN
 * 不止根据输入一次进行判断，**该模型维护一个状态并迭代地改进其预测**，可以对更复杂的推理任务进行建模
+* 没有用到Bert、ELMO等词预训练向量
 * 模型较复杂，多步预测最终才取结果，参数量大
+### MT-DNN
+* 监督学习往往需要大量的标注样本, 但有时候标注数据并不容易取得. MTL可以利用相关的多个任务的标注数据来训练.
+* MTL获益于正则化, 可以避免发生对一个特定任务出现过拟合.
