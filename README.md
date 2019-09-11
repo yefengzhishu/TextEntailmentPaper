@@ -6,8 +6,8 @@ TextEntailment论文分享
 * SAN
 * MTP
 
-##Decomposiable Attention
-###模型输入输出
+## Decomposiable Attention
+### 模型输入输出
 * 训练数据：![DA_label](https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_Label.png)
 * 输入：前提Premise、假说hypothesis
 * 输出：标签
