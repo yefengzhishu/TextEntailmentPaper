@@ -24,17 +24,17 @@ TextEntailment论文分享
 	其中*F*为FFN
 	
 	进而归一化加权得到句子表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_attend_attention_weights.png" height="20%" width="20%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_attend_attention_weights.png" height="40%" width="40%" ></div>
 	
 * Compare
 	
 	对加权后的一个句子与另一个原始句子进行比较
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_compare.png" height="20%" width="20%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_compare.png" height="40%" width="40%" ></div>
 	
 * Aggregate
 
 	将Compare得到的向量结合
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_aggregate_add.png" height="20%" width="20%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_aggregate_add.png" height="40%" width="40%" ></div>
 	
 	通过分类器预测结果标签
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_aggregate_clasification.png" height="20%" width="20%" ></div>
