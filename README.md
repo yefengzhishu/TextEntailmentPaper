@@ -14,7 +14,7 @@ TextEntailment论文分享
 * 输出：a和b之间的关系标签![DA_label](https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_Label.png),C为输出类别的个数,是个C维的0,1向量
 
 ### Model Overview
-<div align="center"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_model_overview.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_model_overview.png" height="40%" width="40%" ></div>
 
 ### Step
 * Attend
@@ -64,7 +64,7 @@ TextEntailment论文分享
 
 ## ESIM
 ### Model Overview
-<div align="center"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_model_overview.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_model_overview.png" height="40%" width="40%" ></div>
 
 ### Step
 * Input Encoding
@@ -75,7 +75,7 @@ TextEntailment论文分享
 * Local Inference Modeling
 
 	计算相似度
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_simlilarity.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_simlilarity.png" height="10%" width="10%" ></div>
 	
 	同DA类似，归一化加权得到句子表示
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_sentence_representation.png" height="40%" width="40%" ></div>
@@ -95,12 +95,12 @@ TextEntailment论文分享
 多分类的交叉熵损失函数
 
 ### Experiments Result
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_experiments.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_experiments.png" height="60%" width="60%" ></div>
 
 
 ## SAN
 ### Model Overview
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_overview.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_overview.png" height="70%" width="70%" ></div>
 
 ### Step
 * Lexicon Encoding Layer
@@ -119,15 +119,15 @@ TextEntailment论文分享
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_attention.png" height="40%" width="40%" ></div>
 	
 	拼接p和h的表示，并再通过一个BiLSTM得到p和h的最终表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_memory.png" height="40%" width="40%" ></div>
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_final_representation.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_memory.png" height="20%" width="20%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_final_representation.png" height="30%" width="30%" ></div>
 
 * Answer module
 
 	经过T步GRU计算，得到最终输出
 	
 	初始状态*s0*
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="40%" width="40%" ></div>其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
 	
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_st.png" height="40%" width="40%" ></div>
 	其中，
