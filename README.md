@@ -14,7 +14,7 @@ TextEntailment论文分享
 * 输出：a和b之间的关系标签![DA_label](https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_Label.png),C为输出类别的个数,是个C维的0,1向量
 
 ### Model Overview
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_model_overview.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_model_overview.png" height="100%" width="100%" ></div>
 
 ### Step
 * Attend
@@ -51,15 +51,15 @@ TextEntailment论文分享
 	
 	最终每一个时刻的输入就变为原始输入跟self-attention后的值的拼接所得到的向量
 	
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_intra_final_input.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_intra_final_input.png" height="30%" width="30%" ></div>
 
 ### Loss Function
 多分类的交叉熵损失函数
 
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_loss_function.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_loss_function.png" height="45%" width="45%" ></div>
 
 ### Experiments Result
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_experiments.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_experiments.png" height="60%" width="60%" ></div>
 
 
 ## ESIM
@@ -70,7 +70,7 @@ TextEntailment论文分享
 * Input Encoding
 
 	使用复用的BiLSTM单元分别对Premise和Hypothesis进行编码，得到句子的表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_input_encoding.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_input_encoding.png" height="35%" width="35%" ></div>
 	
 * Local Inference Modeling
 
@@ -81,13 +81,13 @@ TextEntailment论文分享
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_sentence_representation.png" height="40%" width="40%" ></div>
 	
 	对加权后的一个句子与另一个原始句子进行点乘和求差，希望得到更好的两句话之间的关系表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_local_inference_enhance.png" height="20%" width="20%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_local_inference_enhance.png" height="30%" width="30%" ></div>
 	
 	
 * Inference Composition
 
 	再次通过BiLSTM网络提取上下文信息得到*v_a*和*v_b*，并通过max_pooling和avg_pooling层并concatenate起来
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_inference_composition.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/ESIM_inference_composition.png" height="45%" width="45%" ></div>
 	
 	最终将*v*通过一层MLP和Softmax得到最终分类结果
 
@@ -100,18 +100,18 @@ TextEntailment论文分享
 
 ## SAN
 ### Model Overview
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_overview.png" height="70%" width="70%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_overview.png" height="55%" width="55%" ></div>
 
 ### Step
 * Lexicon Encoding Layer
 
 	将Word Embeddings和Character Embeddings连接起来，通过position-wise FFN得到Lexicon Embedding
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_lexicon_embedding.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_lexicon_embedding.png" height="30%" width="30%" ></div>
 
 * Contextual Encoding Layer
 
 	通过双层BiLSTM得到的hidden state拼接起来得到Precise和Hypothesis的表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_contextual_embedding.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_contextual_embedding.png" height="30%" width="30%" ></div>
 
 * Memory Layer
 
@@ -119,23 +119,24 @@ TextEntailment论文分享
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_attention.png" height="40%" width="40%" ></div>
 	
 	拼接p和h的表示，并再通过一个BiLSTM得到p和h的最终表示
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_memory.png" height="20%" width="20%" ></div>
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_final_representation.png" height="30%" width="30%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_memory.png" height="15%" width="15%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_final_representation.png" height="20%" width="20%" ></div>
 
 * Answer module
 
 	经过T步GRU计算，得到最终输出
 	
 	初始状态*s0*
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
-	
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_st.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>
+	其中
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_st.png" height="25%" width="25%" ></div>
 	其中，
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_xt.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_xt.png" height="50%" width="50%" ></div>
 	
 	通过softmax得到每个时间t的各分类概率<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_pt.png" height="40%" width="40%" ></div>
 	
-	求平均得到最终分类概率，<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_pr.png" height="40%" width="40%" ></div>
+	求平均得到最终分类概率，<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_pr.png" height="25%" width="25%" ></div>
 	
 ### Experiments Result
 
