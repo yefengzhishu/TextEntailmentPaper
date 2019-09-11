@@ -1,2 +1,2 @@
-# Text_Entailment_Paper
-Text_Entailment论文分享
+# TextEntailmentPaper
+TextEntailment论文分享
