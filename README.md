@@ -28,7 +28,7 @@ TextEntailment论文分享
 * Input Presentation
 
 	原始模型使用每个字的Word Embedding作为输入
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_a.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_a.png" height="15%" width="15%" ></div>
 	
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_b.png" height="40%" width="40%" ></div>
 	
@@ -166,7 +166,7 @@ TextEntailment论文分享
 	* * 经过T步GRU计算，得到最终输出
 	
 	* * 初始状态*s0*是h的信息的summary
-		<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>，其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
+		<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
 	* * *s_t*根据之前的状态*s_t-1*和*x_t*进行更新，
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_st.png" height="25%" width="25%" ></div>
 	* * 其中，*x_t*由p的信息和历史状态*s_t-1*共同决定
@@ -212,7 +212,8 @@ TextEntailment论文分享
 
 ## Conclusion
 ### SNLI排行榜
-<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/conclusion_compare.png" height="40%" width="40%" ></div>
+<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/conclusion_compare.png" height="100%" width="100%" ></div>
+
 ### DA
 * 提出一种新思路，不需要对句子结构深入建模，而是通过对齐文本的方式计算相似度
 * 在Attend阶段可以通过并行的方式提高速度
