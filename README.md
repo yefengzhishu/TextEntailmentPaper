@@ -30,7 +30,7 @@ TextEntailment论文分享
 	原始模型使用每个字的Word Embedding作为输入
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_a.png" height="15%" width="15%" ></div>
 	
-	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_b.png" height="40%" width="40%" ></div>
+	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/DA_input_b.png" height="15%" width="15%" ></div>
 	
 * Attend
 
@@ -167,8 +167,10 @@ TextEntailment论文分享
 	
 	* * 初始状态*s0*是h的信息的summary
 		<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_s0.png" height="20%" width="20%" ></div>其中<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_alfa.png" height="25%" width="25%" ></div>
+		
 	* * *s_t*根据之前的状态*s_t-1*和*x_t*进行更新，
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_st.png" height="25%" width="25%" ></div>
+	
 	* * 其中，*x_t*由p的信息和历史状态*s_t-1*共同决定
 	<div align="left"><img src="https://github.com/yefengzhishu/TextEntailmentPaper/blob/master/pic/SAN_answer_xt.png" height="50%" width="50%" ></div>
 	
